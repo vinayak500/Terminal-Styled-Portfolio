@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vinayak Shetty</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+    <style>
+        :root {
+         --size: 1.3;
+     --cursor-line: 0.5;
+    --background: #000000;
+    --color: #39ff14;
+  }
+    </style>
+</head>
+<body>
+   <script>
+           $('body').terminal({
+
+                 about:function(){
+                    this.echo(" Hi , I am final year CS engineering student. ");
+                 }  ,
+
+                 help:function(){
+                    this.echo(" ls \n about \n education \n projects \n socials \n spotify");
+                 } ,
+
+                 socials : function(){
+                    this.echo(" instagram : https://www.instagram.com/vinayakshetty25" );
+                    this.echo(" email : vinayakshetty500@gmail.com " );
+                 } ,
+                 spotify : function(){
+                  this.echo("spotify playlist : https://open.spotify.com/playlist/3U9F57o6Igk8JOH0tIbbpO?si=d035f8fa7ddd45cc")
+                 }
+
+           } , {
+           greetings: " \n Welcome to Vinayak Shetty's terminal! \n \n Type 'help' to view list of available commands. \n "
+});
+
+
+
+
+   </script>
+</body>
+</html>
